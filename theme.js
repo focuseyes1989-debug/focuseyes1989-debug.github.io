@@ -12,7 +12,6 @@
     const setTheme = theme => {
       root.dataset.theme = theme;
       const dark = theme === 'dark';
-      button.firstElementChild.textContent = dark ? '☀' : '☾';
       button.title = dark ? 'Switch to light theme' : 'Switch to dark theme';
       button.setAttribute('aria-label', button.title);
     };

@@ -31,7 +31,12 @@ nav { flex-wrap: wrap; font-size: .88rem; font-weight: 650; }
 .brand span, .hero em { color: var(--accent); font-style: normal; }
 .download, .watch { display: inline-flex; align-items: center; gap: 9px; font-weight: 700; color: white; }
 .download { background: linear-gradient(105deg, #5143a3, #8d487d); border-radius: 99px; padding: .65rem .9rem; }
-#theme { width: 38px; height: 38px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); font-size: 1.25rem; cursor: pointer; }
+.theme-toggle { width: 40px; height: 40px; flex: none; padding: 0; border: 0; border-radius: 9px; background: transparent; color: var(--muted); cursor: pointer; }
+.theme-toggle:hover { background: #eeecf7; color: #51429a; }
+[data-theme="dark"] .theme-toggle:hover { background: #2c2942; color: #c7baff; }
+.theme-toggle svg { display: block; width: 18px; height: 18px; margin: auto; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.theme-toggle .theme-sun, [data-theme="dark"] .theme-toggle .theme-moon { display: none; }
+[data-theme="dark"] .theme-toggle .theme-sun { display: block; }
 .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: stretch; margin-block: clamp(28px, 6vw, 80px) 24px; }
 .hero-copy { align-self: center; padding-block: 24px; }
 .live-label { color: var(--accent); font-size: .76rem; font-weight: 750; letter-spacing: .13em; }
