@@ -42,7 +42,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .site-header nav { gap: 4px; }
 .brand { gap: 10px; font-weight: 750; letter-spacing: .04em; white-space: nowrap; }
 .brand img { border-radius: 10px; flex: none; }
-.nav-watch { padding: .6rem .85rem; border-radius: 9px; color: var(--nav-accent); background: var(--nav-search); font-size: .88rem; font-weight: 600; white-space: nowrap; }
+.nav-watch { padding: .6rem .85rem; color: var(--nav-accent); font-size: .88rem; font-weight: 600; white-space: nowrap; }
 .nav-watch:hover { text-decoration: underline; }
 .brand span, .hero em { color: var(--accent); font-style: normal; }
 .download, .watch { display: inline-flex; align-items: center; gap: 9px; font-weight: 700; color: white; }
